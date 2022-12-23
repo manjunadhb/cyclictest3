@@ -6,9 +6,9 @@ const app = express();
 dotenv.config();
 let PORT = 8080 || process.env.PORT;
 
-app.get("*", (req, res) => {
-  res.send("<h1>This is from NodeJS</h1>");
-});
+// app.get("*", (req, res) => {
+//   res.send("<h1>This is from NodeJS</h1>");
+// });
 
 app.get("/moviesList", (req, res) => {
   res.json([
